@@ -42,7 +42,7 @@ public abstract class FormElementController {
         return name;
     }
 
-    void setModel(FormModel model) {
+    public void setModel(FormModel model) {
         this.model = model;
     }
 

@@ -184,7 +184,9 @@ public class FormController {
             containerView.addView(section.getView());
 
             for (FormElementController element : section.getElements()) {
-                element.setModel(getModel());
+                if(element.getModel()==null){
+                    element.setModel(getModel());
+                }
                 containerView.addView(element.getView());
             }
         }
